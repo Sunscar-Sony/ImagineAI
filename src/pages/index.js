@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>ImagineAI</title>
+    </Head>
       <h1>Hello ImagineAI</h1>
     </>
   );
