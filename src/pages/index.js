@@ -1,17 +1,15 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import Navbar from '../components/Navbar';
+import HeroSection from '../components/HeroSection';
+import ChatbotSection from '../components/ChatbotSection';
+import Footer from '../components/Footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const Home = () => (
+  <>
+    <Navbar />
+    <HeroSection />
+    <ChatbotSection />
+    <Footer />
+  </>
+);
 
-export default function Home() {
-  return (
-    <>
-    <Head>
-      <title>ImagineAI</title>
-    </Head>
-      <h1>Hello ImagineAI</h1>
-    </>
-  );
-}
+export default Home;
